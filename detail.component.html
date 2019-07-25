@@ -1,0 +1,22 @@
+
+      <ul id = "myList">
+        <li *ngFor="let item of classPicked; let i=index"
+         id="s{{i}}"
+         (click) = "onClickMe(i)">
+         {{item.soname}}
+        </li></ul>
+       
+       <div id="d{{i}}">
+         <img src= {{item.picture}} width="170px"><br>
+               <strong>Love Song:</strong> {{item.soname}}<br>
+               <strong>Artist:</strong> {{item.artist}}<br> 
+               <strong>Genre:</strong> {{item.genre}}<br> 
+               <strong>Year:</strong> {{item.year}}<br>
+               
+                </div>
+                </li> 
+               </ul> 
+
+               
+
+               
